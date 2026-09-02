@@ -1,0 +1,106 @@
+name: Bug Report
+description: Report a Volume Guard audio or normalization problem.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: Describe the Volume Guard audio or normalization problem.
+      placeholder: Explain what happened and when it began.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that reliably reproduce the problem.
+      placeholder: |
+        1. Open ...
+        2. Enable Volume Guard ...
+        3. Select ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: Describe what you expected Volume Guard to do.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: Describe what Volume Guard actually did.
+    validations:
+      required: true
+
+  - type: input
+    id: website-service
+    attributes:
+      label: Website or service used
+      description: Name the website or service where the problem occurred.
+      placeholder: YouTube Music, YouTube, Twitch, Netflix, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Provide the requested version and environment details.
+      placeholder: |
+        Volume Guard version:
+        Browser:
+        Browser version:
+        Operating system:
+    validations:
+      required: true
+
+  - type: textarea
+    id: extension-state
+    attributes:
+      label: Extension state and settings
+      description: Provide the relevant Volume Guard state and settings.
+      placeholder: |
+        Extension enabled or disabled:
+        Preset:
+        Site excluded (yes/no):
+        Language:
+    validations:
+      required: true
+
+  - type: textarea
+    id: audio-diagnostics
+    attributes:
+      label: Audio diagnostics
+      description: Paste these values from Copy diagnostics when available.
+      placeholder: |
+        Gain:
+        Input level:
+        Output volume:
+        Active state:
+        Timestamp:
+
+  - type: textarea
+    id: evidence-and-additional-diagnostics
+    attributes:
+      label: Screenshots, recordings, and additional diagnostics
+      description: Add screenshots, recordings, and any other diagnostics that help explain the problem.
+      placeholder: Drag files here or paste additional diagnostic details. Remove sensitive information first.
+
+  - type: checkboxes
+    id: sensitive-information
+    attributes:
+      label: Sensitive information check
+      description: GitHub Issues are public. Remove private or sensitive information before submitting.
+      options:
+        - label: The reporter has removed private or sensitive information before submitting.
+          required: true

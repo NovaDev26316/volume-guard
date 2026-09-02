@@ -1,0 +1,50 @@
+name: Feature Request
+description: Suggest a feature or improvement for Volume Guard.
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature description
+      description: Describe the feature you would like Volume Guard to provide.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-to-solve
+    attributes:
+      label: Problem to solve
+      description: Explain the problem, limitation, or inconvenience this feature would address.
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-behavior
+    attributes:
+      label: Desired behavior
+      description: Describe how you expect the feature to work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives considered
+      description: Describe any alternative solutions, settings, or workflows you considered.
+
+  - type: textarea
+    id: use-scenario
+    attributes:
+      label: Use scenario
+      description: Explain where and how you would use this feature.
+      placeholder: YouTube Music, lectures, live streams, a specific audio workflow, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional information, screenshots, or mockups
+      description: Add any examples, screenshots, mockups, or other useful context.

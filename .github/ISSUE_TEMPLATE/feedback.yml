@@ -1,0 +1,55 @@
+name: General Feedback
+description: Share general feedback about Volume Guard.
+title: "[Feedback] "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: GitHub Issues are public. Do not include private or sensitive information.
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Tell us what is working well or what could be improved.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area or category
+      description: Select the area most closely related to your feedback.
+      options:
+        - UI / UX
+        - Volume control
+        - Audio behavior
+        - Presets
+        - Site exclusions
+        - Scheduling
+        - Support / diagnostics
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: related-website-service
+    attributes:
+      label: Related website or service
+      description: Optionally name a website or service related to your feedback.
+      placeholder: YouTube Music, YouTube, Twitch, etc.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Optionally add examples, screenshots, or other context.
+
+  - type: checkboxes
+    id: sensitive-information
+    attributes:
+      label: Sensitive information check
+      options:
+        - label: I confirm that this submission does not include private or sensitive information.
+          required: true
