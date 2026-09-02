@@ -4,7 +4,7 @@
 
 Do not report security vulnerabilities through public GitHub Issues. Public issues may expose sensitive vulnerability details before they can be addressed.
 
-Report vulnerabilities privately by email to `wnsdud040820@gmail.com`.
+Report vulnerabilities privately by email to `novadev26316@gmail.com`.
 
 Include the following information when it is relevant:
 
