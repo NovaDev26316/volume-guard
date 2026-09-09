@@ -42,6 +42,7 @@
       <ul>
         <li>Email OTP sign-in processes your email address, a random installation-scoped device ID, authentication request and session state, and token hashes.</li>
         <li>The refresh token used to keep you signed in is stored in Chrome local storage restricted to extension contexts. Only token hashes are stored by the backend.</li>
+        <li>IP addresses may be processed for authentication security and abuse-prevention rate limiting. They are not used for advertising, profiling, or location tracking.</li>
         <li>The Volume Guard backend stores the minimum records needed to operate accounts and subscriptions, including email-account records, device and session metadata, Lemon Squeezy customer and subscription identifiers, subscription status and period dates, and webhook-processing records.</li>
         <li>The backend uses PostgreSQL for these records, Resend to send authentication email, and encrypted AWS S3 backups. These providers process data only to deliver the relevant service.</li>
       </ul>
@@ -110,6 +111,7 @@
       <ul>
         <li>이메일 OTP 로그인 과정에서 이메일 주소, 무작위 설치 단위 device ID, 인증 요청·세션 상태와 토큰 해시를 처리합니다.</li>
         <li>로그인 유지용 refresh token은 확장 프로그램 내부에서만 접근 가능한 Chrome 로컬 저장소에 보관되며, backend에는 토큰 해시만 저장됩니다.</li>
+        <li>인증 보안 및 악용 방지를 위한 요청 제한(rate limiting) 목적으로 IP 주소를 처리할 수 있습니다. IP 주소는 광고, 프로파일링 또는 위치 추적 목적으로 사용하지 않습니다.</li>
         <li>Volume Guard backend는 이메일 계정 기록, 기기·세션 메타데이터, Lemon Squeezy 고객·구독 식별자, 구독 상태·기간과 webhook 처리 기록 등 계정과 구독 운영에 필요한 최소 기록을 저장합니다.</li>
         <li>이 기록에는 PostgreSQL을 사용하고, 인증 이메일 발송에는 Resend를 사용하며, 암호화된 백업은 AWS S3에 저장합니다. 각 제공자는 해당 서비스를 제공하는 데 필요한 범위에서만 데이터를 처리합니다.</li>
       </ul>
