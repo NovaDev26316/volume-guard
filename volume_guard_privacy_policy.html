@@ -3,92 +3,162 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Volume Guard Privacy Policy</title>
+  <title>Volume Guard Privacy Policy and Service Terms</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 840px;
+      line-height: 1.65;
+      max-width: 900px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 0 20px 64px;
       color: #202124;
     }
-    h1, h2 { line-height: 1.25; }
+    h1, h2, h3 { line-height: 1.3; }
+    h2 { margin-top: 2rem; }
     .muted { color: #5f6368; }
-    code {
-      background: #f1f3f4;
-      padding: 2px 5px;
-      border-radius: 4px;
-    }
+    .language-section { margin-top: 3rem; border-top: 1px solid #dadce0; padding-top: 1rem; }
+    a { color: #0b57d0; }
   </style>
 </head>
 <body>
-  <h1>Volume Guard Privacy Policy</h1>
-  <p class="muted">Effective date: 2026-09-02</p>
+  <header>
+    <h1>Volume Guard Privacy Policy and Service Terms</h1>
+    <p class="muted">Version 0.4.0 · Effective September 9, 2026</p>
+    <p>These policies apply to the Volume Guard Chrome extension and its related account and subscription APIs.</p>
+  </header>
 
-  <p>
-    Volume Guard is a Chrome extension that helps normalize and control audio volume
-    for the active browser tab.
-  </p>
+  <main>
+    <section lang="en">
+      <h2>Privacy Policy</h2>
 
-  <h2>Data handled by Volume Guard</h2>
+      <h3>Audio processing and local settings</h3>
+      <ul>
+        <li>When you activate Volume Guard, the extension captures the audio stream of the selected tab solely to provide local volume normalization and output control.</li>
+        <li>Tab audio is processed inside the browser. Volume Guard does not record, store, upload, sell, or share the audio.</li>
+        <li>Presets, output volume, Night Mode, site exclusions and settings, language, account state, and the entitlement cache may be stored in Chrome local storage.</li>
+      </ul>
 
-  <h3>1. Website content: active tab audio</h3>
-  <p>
-    When the user activates Volume Guard, the extension may capture the audio stream
-    of the currently selected active tab in order to apply local volume normalization
-    and output volume adjustment.
-  </p>
-  <p>
-    The captured tab audio is processed locally in the browser. Volume Guard does not
-    record, store, upload, sell, or share tab audio.
-  </p>
+      <h3>Account, authentication, and subscription data</h3>
+      <ul>
+        <li>Email OTP sign-in processes your email address, a random installation-scoped device ID, authentication request and session state, and token hashes.</li>
+        <li>The refresh token used to keep you signed in is stored in Chrome local storage restricted to extension contexts. Only token hashes are stored by the backend.</li>
+        <li>The Volume Guard backend stores the minimum records needed to operate accounts and subscriptions, including email-account records, device and session metadata, Lemon Squeezy customer and subscription identifiers, subscription status and period dates, and webhook-processing records.</li>
+        <li>The backend uses PostgreSQL for these records, Resend to send authentication email, and encrypted AWS S3 backups. These providers process data only to deliver the relevant service.</li>
+      </ul>
 
-  <h3>2. Extension settings</h3>
-  <p>
-    Volume Guard may store user preferences locally in the browser, such as normalization
-    strength, output volume level, selected preset, and enabled or disabled state.
-  </p>
-  <p>
-    These settings are used only to provide the extension’s audio control features.
-  </p>
+      <h3>Payments</h3>
+      <p>Lemon Squeezy is the merchant of record for Volume Guard Pro. It handles checkout, payment processing, taxes, receipts, and payment records. Volume Guard does not directly process or store raw payment credentials such as card numbers. The Volume Guard backend receives and stores the identifiers, status, and dates needed to synchronize subscription state and Pro entitlement.</p>
 
-  <h2>Data Volume Guard does not collect</h2>
-  <p>
-    Volume Guard does not collect personal identification information, health information,
-    financial or payment information, authentication information, personal communications,
-    location data, browsing history, or user activity logs.
-  </p>
+      <h3>Diagnostics and tracking</h3>
+      <p>Issue reports and diagnostics are not transmitted automatically. You review and submit them yourself. Volume Guard does not use browser fingerprinting or advertising tracking, and it does not sell user data.</p>
 
-  <h2>Data sharing</h2>
-  <p>
-    Volume Guard does not sell user data. Volume Guard does not transfer user data to
-    advertising platforms, data brokers, or information resellers. Volume Guard does not
-    use user data for personalized advertising. Volume Guard does not use user data to
-    determine creditworthiness or for lending purposes.
-  </p>
+      <h3>Retention and deletion</h3>
+      <ul>
+        <li>Signing out removes local authentication data and the entitlement cache. Other local settings are removed when you uninstall the extension or clear its Chrome storage.</li>
+        <li>Server records are retained only as needed to operate accounts and subscriptions, protect security, resolve disputes, and meet legal obligations, then deleted or de-identified. Backup copies expire through a rolling retention cycle.</li>
+        <li>For access or deletion requests, contact the support email below. Do not post personal data in a public issue.</li>
+        <li>Transaction records held by Lemon Squeezy follow its retention requirements and applicable law.</li>
+      </ul>
 
-  <h2>Remote processing</h2>
-  <p>
-    Volume Guard processes tab audio locally in the browser. Tab audio is not transmitted
-    to external servers.
-  </p>
+      <h3>Chrome Web Store Limited Use</h3>
+      <p>Information received from Chrome extension APIs is used only to provide Volume Guard's user-facing features and is handled in accordance with the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
 
-  <h2>Data retention</h2>
-  <p>
-    Extension settings remain stored locally in the user’s browser until the user changes
-    the settings, resets the extension, or uninstalls the extension.
-  </p>
+      <h2>Terms of Service</h2>
+      <ul>
+        <li>Volume Guard helps normalize web-tab audio and reduce sudden loud sounds, but it cannot guarantee identical perceived loudness for all content.</li>
+        <li>Core normalization and safety features are provided on Free. A Pro subscription provides the subscription-only features shown in the extension.</li>
+        <li>You must have the right to access the content and accounts you use and must follow applicable law and site terms.</li>
+        <li>Features or service terms may change for reliability, security, or legal requirements. Material changes will be communicated through the extension or support channel.</li>
+        <li>The service is provided as available and does not guarantee operation on every website, audio source, or device.</li>
+      </ul>
 
-  <h2>Chrome Web Store Limited Use disclosure</h2>
-  <p>
-    The use of information received from Chrome extension APIs will adhere to the Chrome
-    Web Store User Data Policy, including the Limited Use requirements.
-  </p>
+      <h2>Subscriptions and Cancellation</h2>
+      <ul>
+        <li>Pro is a monthly or yearly auto-renewing subscription. Before payment, the Lemon Squeezy checkout shows the product, price, currency, taxes, and billing interval.</li>
+        <li>You may cancel at any time through Manage subscription. Unless canceled, the subscription renews for the next billing period.</li>
+        <li>After cancellation, Pro remains available through the current paid period, then changes to Free after the period ends and entitlement synchronization completes.</li>
+        <li>If a payment or subscription change is delayed, use Refresh subscription status in the extension.</li>
+      </ul>
 
-  <h2>Contact</h2>
-  <p>
-    For privacy questions, contact: <code>novadev26316@gmail.com</code>
-  </p>
+      <h2>Refunds</h2>
+      <ul>
+        <li>Submit refund requests through the Lemon Squeezy seller-support path shown on your purchase receipt. Eligibility is reviewed under applicable law and the terms disclosed at purchase.</li>
+        <li>Canceling stops the next automatic renewal but does not automatically refund a period that has already been paid.</li>
+        <li>For a duplicate or unauthorized charge, or a suspected failure to provide the service, contact the Lemon Squeezy seller-support path with your receipt.</li>
+      </ul>
+
+      <h2>Support and Contact</h2>
+      <p><a href="mailto:novadev26316@gmail.com">Contact support privately by email</a> or <a href="https://github.com/NovaDev26316/volume-guard/issues/new">create a public support request on GitHub</a>.</p>
+      <p>Do not post your email address, OTP, authentication tokens, order, customer, or subscription IDs, or other personal data in a public issue. Use email for account, privacy-access, or deletion requests. For billing and refund questions, first use the Lemon Squeezy seller-support path shown on your receipt.</p>
+    </section>
+
+    <section lang="ko" class="language-section">
+      <h1>Volume Guard 개인정보 처리방침 및 서비스 정책</h1>
+      <p class="muted">버전 0.4.0 · 시행일: 2026년 9월 9일</p>
+      <p>이 정책은 Volume Guard Chrome 확장 프로그램과 관련 계정·구독 API에 적용됩니다.</p>
+
+      <h2>개인정보 처리방침</h2>
+
+      <h3>오디오 처리 및 로컬 설정</h3>
+      <ul>
+        <li>Volume Guard를 활성화하면 로컬 음량 평준화와 출력 제어를 제공하기 위한 목적으로 선택한 탭의 오디오 스트림을 캡처합니다.</li>
+        <li>탭 오디오는 브라우저 내부에서 처리합니다. Volume Guard는 오디오를 녹음, 저장, 업로드, 판매 또는 공유하지 않습니다.</li>
+        <li>프리셋, 출력 볼륨, Night Mode, 사이트 제외·설정, 언어, 계정 상태와 entitlement 캐시는 Chrome 로컬 저장소에 보관될 수 있습니다.</li>
+      </ul>
+
+      <h3>계정, 인증 및 구독 데이터</h3>
+      <ul>
+        <li>이메일 OTP 로그인 과정에서 이메일 주소, 무작위 설치 단위 device ID, 인증 요청·세션 상태와 토큰 해시를 처리합니다.</li>
+        <li>로그인 유지용 refresh token은 확장 프로그램 내부에서만 접근 가능한 Chrome 로컬 저장소에 보관되며, backend에는 토큰 해시만 저장됩니다.</li>
+        <li>Volume Guard backend는 이메일 계정 기록, 기기·세션 메타데이터, Lemon Squeezy 고객·구독 식별자, 구독 상태·기간과 webhook 처리 기록 등 계정과 구독 운영에 필요한 최소 기록을 저장합니다.</li>
+        <li>이 기록에는 PostgreSQL을 사용하고, 인증 이메일 발송에는 Resend를 사용하며, 암호화된 백업은 AWS S3에 저장합니다. 각 제공자는 해당 서비스를 제공하는 데 필요한 범위에서만 데이터를 처리합니다.</li>
+      </ul>
+
+      <h3>결제</h3>
+      <p>Lemon Squeezy는 Volume Guard Pro의 판매대행자(Merchant of Record)로서 결제 화면, 결제 처리, 세금, 영수증과 결제 기록을 담당합니다. Volume Guard는 카드 번호 같은 결제수단 원문을 직접 처리하거나 저장하지 않습니다. Volume Guard backend는 구독 상태와 Pro entitlement 동기화에 필요한 식별자, 상태와 날짜를 수신하고 저장합니다.</p>
+
+      <h3>진단 정보 및 추적</h3>
+      <p>문제 신고와 진단 정보는 자동 전송되지 않으며 사용자가 확인 후 직접 제출합니다. Volume Guard는 브라우저 fingerprint, 광고 추적을 사용하거나 사용자 데이터를 판매하지 않습니다.</p>
+
+      <h3>보유 및 삭제</h3>
+      <ul>
+        <li>로그아웃하면 로컬 인증 정보와 entitlement 캐시가 제거됩니다. 그 밖의 로컬 설정은 확장 프로그램 삭제 또는 Chrome 저장소 삭제 시 제거됩니다.</li>
+        <li>서버 기록은 계정·구독 운영, 보안, 분쟁 대응과 법적 의무에 필요한 기간만 보관한 뒤 삭제하거나 비식별화하며, 백업 사본은 순환 보존 기간에 따라 제거됩니다.</li>
+        <li>개인정보 열람·삭제 요청은 아래 지원 이메일로 문의해 주세요. 공개 이슈에 개인정보를 게시하지 마세요.</li>
+        <li>Lemon Squeezy가 보유한 거래 기록은 해당 서비스와 적용 법률의 보존 조건을 따릅니다.</li>
+      </ul>
+
+      <h3>Chrome Web Store 제한적 사용</h3>
+      <p>Chrome 확장 프로그램 API에서 받은 정보는 Volume Guard의 사용자 기능 제공 목적으로만 사용하며, 제한적 사용 요건을 포함한 Chrome Web Store 사용자 데이터 정책에 따라 처리합니다.</p>
+
+      <h2>이용약관</h2>
+      <ul>
+        <li>Volume Guard는 웹 탭 음량 평준화와 갑작스러운 큰 소리 완화를 돕는 도구이며 모든 콘텐츠의 일정한 체감 음량을 보장하지 않습니다.</li>
+        <li>기본 평준화와 안전 기능은 Free로 제공되며, Pro 구독은 확장 프로그램에 표시된 구독 전용 기능을 제공합니다.</li>
+        <li>사용자는 서비스 이용 권한이 있는 콘텐츠와 계정을 사용하고 관련 법률 및 사이트 약관을 준수해야 합니다.</li>
+        <li>서비스 안정성·보안·법적 요구를 위해 기능 또는 제공 조건이 변경될 수 있으며 중요한 변경은 확장 프로그램 또는 지원 채널을 통해 안내합니다.</li>
+        <li>서비스는 현재 상태와 이용 가능한 범위에서 제공되며 모든 사이트, 오디오 소스 또는 기기에서의 동작을 보장하지 않습니다.</li>
+      </ul>
+
+      <h2>구독 및 취소</h2>
+      <ul>
+        <li>Pro는 월간 또는 연간 자동 갱신 구독입니다. 결제 전 Lemon Squeezy 결제 화면에서 상품, 가격, 통화, 세금과 결제 주기를 확인할 수 있습니다.</li>
+        <li>구독 관리에서 언제든지 취소할 수 있으며, 취소하지 않으면 다음 결제 주기에 자동 갱신됩니다.</li>
+        <li>취소 후에도 현재 결제 기간 종료일까지 Pro를 이용할 수 있으며, 기간 종료와 entitlement 동기화 후 Free 상태로 전환됩니다.</li>
+        <li>결제 또는 구독 변경 반영이 지연되면 확장 프로그램에서 구독 상태 새로고침을 사용해 주세요.</li>
+      </ul>
+
+      <h2>환불</h2>
+      <ul>
+        <li>환불 요청은 구매 영수증에 안내된 Lemon Squeezy 판매자 지원 경로로 접수하며, 환불 가능 여부는 적용 법률과 구매 시 고지된 조건에 따라 검토됩니다.</li>
+        <li>구독 취소는 다음 자동 갱신을 중단하지만 이미 결제된 기간의 자동 환불을 의미하지는 않습니다.</li>
+        <li>중복 결제, 승인되지 않은 결제 또는 서비스 제공 실패가 의심되면 영수증과 함께 Lemon Squeezy 판매자 지원 경로로 문의해 주세요.</li>
+      </ul>
+
+      <h2>지원 및 문의</h2>
+      <p><a href="mailto:novadev26316@gmail.com">이메일로 비공개 문의</a>하거나 <a href="https://github.com/NovaDev26316/volume-guard/issues/new">GitHub에서 공개 지원 요청</a>을 만들 수 있습니다.</p>
+      <p>공개 이슈에 이메일, OTP, 인증 토큰, 주문·고객·구독 ID 또는 그 밖의 개인정보를 게시하지 마세요. 계정, 개인정보 열람 또는 삭제 요청은 이메일을 이용해 주세요. 결제와 환불 문의는 구매 영수증에 안내된 Lemon Squeezy 판매자 지원 경로를 먼저 이용해 주세요.</p>
+    </section>
+  </main>
 </body>
 </html>
