@@ -10,6 +10,13 @@ When you enable Volume Guard, it captures the active tab's audio and processes i
 
 Captured tab audio is used only for real-time processing. It is not recorded, saved, uploaded, sold, or shared.
 
+## Features
+
+- Active-tab audio normalization with local browser processing.
+- Global and per-site controls for tailoring behavior across websites.
+- Free controls for normalization, output volume, site exclusions, diagnostics, and Korean / English UI.
+- Pro Advanced Mixer with Mixer Master, HPF / LPF, 4-band EQ, Compressor, Gate / Expander, Limiter, Reverb, Delay, metering, reset controls, and a real-time EQ response graph.
+
 ## Links
 
 - [Install Volume Guard from the Chrome Web Store](https://chromewebstore.google.com/detail/volume-guard/jphlbijdgpcjanmdjacfhlhidgcbogah)

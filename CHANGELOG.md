@@ -16,6 +16,40 @@ All notable public changes to Volume Guard are documented here.
 
 <!-- Document public fixes here. -->
 
+## 0.4.1
+
+### Added
+
+- Added the Advanced Mixer workspace for Pro users.
+- Added Mixer Master control for advanced audio processing.
+- Added HPF and LPF controls.
+- Added 4-band EQ controls.
+- Added a real-time EQ response graph.
+- Added Compressor controls.
+- Added Gate / Expander controls.
+- Added Limiter controls.
+- Added Reverb controls.
+- Added Delay controls.
+- Added Mixer metering and reset controls.
+
+### Changed
+
+- Improved synchronization between the popup and Advanced Mixer audio settings.
+- Improved Global / This Site setting synchronization.
+- Improved current-site tracking when moving between tabs and windows.
+- Improved active-tab normalization stability.
+- Improved Pro audio setting behavior so the active controls and effective audio state stay aligned.
+- Improved behavior when multiple browser windows are open.
+
+### Fixed
+
+- Prevented multiple Mixer windows from opening for the same context.
+- Fixed duplicate Mixer creation after closing and reopening the Mixer.
+- Fixed cases where Current Tab information could remain on an older site.
+- Fixed Global / This Site controls moving separately between the popup and Mixer.
+- Fixed current-site link flicker when multiple popups were open at the same time.
+- Improved stability around stale context and browser window switching.
+
 ## 0.3.2
 
 ### Changed
