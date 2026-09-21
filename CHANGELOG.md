@@ -16,6 +16,14 @@ All notable public changes to Volume Guard are documented here.
 
 <!-- Document public fixes here. -->
 
+## 0.4.2
+
+### Changed
+
+- Updated the Chrome Web Store package description.
+- Updated the Volume Guard extension branding with the new application icon.
+- Standardized extension icons across supported Chrome icon sizes.
+
 ## 0.4.1
 
 ### Added
