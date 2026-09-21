@@ -21,8 +21,15 @@ All notable public changes to Volume Guard are documented here.
 ### Added
 
 - Added Advanced Mixer presets with Voice, Music, Movie, Bass, and Night built-in presets.
+- Added the Flat built-in preset using the neutral Mixer defaults.
 - Added custom preset saving, loading, renaming, updating, and deletion.
 - Added preset support for both Global and This Site mixer settings.
+
+### Changed
+
+- Improved preset action labels and button states for clearer controls.
+- Added a Custom state when current Mixer settings do not match a preset.
+- Improved preset selector synchronization when switching between Global and This Site.
 
 ## 0.4.2
 
