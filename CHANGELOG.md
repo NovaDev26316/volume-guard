@@ -16,6 +16,22 @@ All notable public changes to Volume Guard are documented here.
 
 <!-- Document public fixes here. -->
 
+## 0.4.4
+
+### Changed
+
+- Redesigned the extension popup for clearer status information and faster access to frequently used audio controls.
+- Reorganized popup controls across Basic, Site, Account, and Diagnostics sections.
+- Updated the popup visual design to better match the Advanced Mixer.
+- Improved Night Mode controls by keeping the main toggle immediately available while moving schedule settings into a collapsible details section.
+- Improved popup typography, spacing, control states, and overall readability.
+- Increased popup width to provide more space for gain, input-level, and site information.
+- Improved Global / This Site and other popup controls without changing their existing behavior.
+
+### Added
+
+- Added keyboard navigation and improved accessibility behavior for popup tabs.
+
 ## 0.4.3
 
 ### Added
