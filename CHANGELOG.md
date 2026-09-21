@@ -16,6 +16,14 @@ All notable public changes to Volume Guard are documented here.
 
 <!-- Document public fixes here. -->
 
+## 0.4.3
+
+### Added
+
+- Added Advanced Mixer presets with Voice, Music, Movie, Bass, and Night built-in presets.
+- Added custom preset saving, loading, renaming, updating, and deletion.
+- Added preset support for both Global and This Site mixer settings.
+
 ## 0.4.2
 
 ### Changed
