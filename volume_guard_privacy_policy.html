@@ -23,7 +23,7 @@
 <body>
   <header>
     <h1>Volume Guard Privacy Policy and Service Terms</h1>
-    <p class="muted">Version 0.4.0 · Effective September 9, 2026</p>
+    <p class="muted">Version 0.4.5 · Effective September 22, 2026</p>
     <p>These policies apply to the Volume Guard Chrome extension and its related account and subscription APIs.</p>
   </header>
 
@@ -51,12 +51,17 @@
       <p>Lemon Squeezy is the merchant of record for Volume Guard Pro. It handles checkout, payment processing, taxes, receipts, and payment records. Volume Guard does not directly process or store raw payment credentials such as card numbers. The Volume Guard backend receives and stores the identifiers, status, and dates needed to synchronize subscription state and Pro entitlement.</p>
 
       <h3>Diagnostics and tracking</h3>
-      <p>Issue reports and diagnostics are not transmitted automatically. You review and submit them yourself. Volume Guard does not use browser fingerprinting or advertising tracking, and it does not sell user data.</p>
+      <p>Support reports and diagnostics are not transmitted automatically. You review the in-app form and they are sent only when you press <strong>Submit report</strong>. You may submit anonymously or associate a report with your account when a valid sign-in session is used.</p>
+      <p>An in-app report stores the category, title, description, optional reproduction steps, extension version, language, report status, opaque public report ID, and timestamps. Diagnostics are optional and limited to a strict whitelist of extension and manifest version, browser summary and language, UI language, active state, current gain, input level, output volume, normalization strength, Night Mode state, scope, and plan. The current site hostname is a separate opt-in.</p>
+      <p>Support reports do not include raw audio, full URLs, page titles, saved-site hostname lists, access or refresh tokens, OTPs, device/session secrets, email or client-supplied user IDs, Lemon Squeezy customer or subscription IDs, checkout/order/payment data, or arbitrary Chrome storage.</p>
+
+      <h3>Support operations and abuse prevention</h3>
+      <p>Operators can access recent reports and change report status through private backend tooling. The support endpoint may process the request IP address for abuse prevention. The current MVP limiter is process-local, resets on backend restart, and is not shared across multiple instances.</p>
 
       <h3>Retention and deletion</h3>
       <ul>
         <li>Signing out removes local authentication data and the entitlement cache. Other local settings are removed when you uninstall the extension or clear its Chrome storage.</li>
-        <li>Server records are retained only as needed to operate accounts and subscriptions, protect security, resolve disputes, and meet legal obligations, then deleted or de-identified. Backup copies expire through a rolling retention cycle.</li>
+        <li>Support reports are retained for a default period of 180 days and then deleted by the backend retention cleanup. Encrypted backup copies expire through a separate rolling retention cycle and may remain until that cycle completes.</li>
         <li>For access or deletion requests, contact the support email below. Do not post personal data in a public issue.</li>
         <li>Transaction records held by Lemon Squeezy follow its retention requirements and applicable law.</li>
       </ul>
@@ -89,13 +94,13 @@
       </ul>
 
       <h2>Support and Contact</h2>
-      <p><a href="mailto:novadev26316@gmail.com">Contact support privately by email</a> or <a href="https://github.com/NovaDev26316/volume-guard/issues/new">create a public support request on GitHub</a>.</p>
+      <p>Use the in-app report form as the primary support path. If the service is unavailable, <a href="https://github.com/NovaDev26316/volume-guard/issues/new">create a public support request on GitHub</a> as a fallback, or <a href="mailto:novadev26316@gmail.com">contact support privately by email</a> for account, access, or deletion requests.</p>
       <p>Do not post your email address, OTP, authentication tokens, order, customer, or subscription IDs, or other personal data in a public issue. Use email for account, privacy-access, or deletion requests. For billing and refund questions, first use the Lemon Squeezy seller-support path shown on your receipt.</p>
     </section>
 
     <section lang="ko" class="language-section">
       <h1>Volume Guard 개인정보 처리방침 및 서비스 정책</h1>
-      <p class="muted">버전 0.4.0 · 시행일: 2026년 9월 9일</p>
+      <p class="muted">버전 0.4.5 · 시행일: 2026년 9월 22일</p>
       <p>이 정책은 Volume Guard Chrome 확장 프로그램과 관련 계정·구독 API에 적용됩니다.</p>
 
       <h2>개인정보 처리방침</h2>
@@ -120,12 +125,17 @@
       <p>Lemon Squeezy는 Volume Guard Pro의 판매대행자(Merchant of Record)로서 결제 화면, 결제 처리, 세금, 영수증과 결제 기록을 담당합니다. Volume Guard는 카드 번호 같은 결제수단 원문을 직접 처리하거나 저장하지 않습니다. Volume Guard backend는 구독 상태와 Pro entitlement 동기화에 필요한 식별자, 상태와 날짜를 수신하고 저장합니다.</p>
 
       <h3>진단 정보 및 추적</h3>
-      <p>문제 신고와 진단 정보는 자동 전송되지 않으며 사용자가 확인 후 직접 제출합니다. Volume Guard는 브라우저 fingerprint, 광고 추적을 사용하거나 사용자 데이터를 판매하지 않습니다.</p>
+      <p>지원 신고와 진단 정보는 자동 전송되지 않습니다. 사용자가 인앱 폼을 확인하고 <strong>신고 제출</strong>을 눌렀을 때만 전송됩니다. 유효한 로그인 세션으로 제출하면 계정과 연결될 수 있으며, 익명 제출도 가능합니다.</p>
+      <p>인앱 신고에는 분류, 제목, 설명, 선택적 재현 단계, 확장 프로그램 버전, 언어, 신고 상태, opaque public report ID와 시간이 저장될 수 있습니다. 진단 정보는 선택 사항이며 확장 프로그램·Manifest 버전, 브라우저 요약·언어, UI 언어, 적용 상태, 현재 Gain, 입력 레벨, 출력 볼륨, 평준화 강도, Night Mode, 범위와 플랜 중 whitelist 항목만 포함합니다. 현재 사이트 호스트명은 별도 허용한 경우에만 포함됩니다.</p>
+      <p>원본 오디오, 전체 URL, 페이지 제목, 저장된 사이트 호스트명 목록, access/refresh token, OTP, device/session secret, 이메일 또는 클라이언트가 보낸 user ID, Lemon Squeezy 고객·구독 ID, checkout/order/payment 데이터와 임의의 Chrome storage는 지원 신고에 포함되지 않습니다.</p>
+
+      <h3>지원 운영 및 악용 방지</h3>
+      <p>운영자는 비공개 backend tooling으로 최근 신고를 확인하고 상태를 변경할 수 있습니다. 지원 endpoint는 악용 방지를 위해 요청 IP를 처리할 수 있습니다. 현재 MVP limiter는 backend 프로세스 로컬이며 재시작 시 초기화되고 여러 인스턴스 사이에서 공유되지 않습니다.</p>
 
       <h3>보유 및 삭제</h3>
       <ul>
         <li>로그아웃하면 로컬 인증 정보와 entitlement 캐시가 제거됩니다. 그 밖의 로컬 설정은 확장 프로그램 삭제 또는 Chrome 저장소 삭제 시 제거됩니다.</li>
-        <li>서버 기록은 계정·구독 운영, 보안, 분쟁 대응과 법적 의무에 필요한 기간만 보관한 뒤 삭제하거나 비식별화하며, 백업 사본은 순환 보존 기간에 따라 제거됩니다.</li>
+        <li>지원 신고는 기본 180일 동안 보관한 뒤 backend retention cleanup으로 삭제합니다. 암호화된 백업 사본은 별도 순환 보존 주기에 따라 만료되며, 해당 주기가 끝날 때까지 남을 수 있습니다.</li>
         <li>개인정보 열람·삭제 요청은 아래 지원 이메일로 문의해 주세요. 공개 이슈에 개인정보를 게시하지 마세요.</li>
         <li>Lemon Squeezy가 보유한 거래 기록은 해당 서비스와 적용 법률의 보존 조건을 따릅니다.</li>
       </ul>
@@ -158,7 +168,7 @@
       </ul>
 
       <h2>지원 및 문의</h2>
-      <p><a href="mailto:novadev26316@gmail.com">이메일로 비공개 문의</a>하거나 <a href="https://github.com/NovaDev26316/volume-guard/issues/new">GitHub에서 공개 지원 요청</a>을 만들 수 있습니다.</p>
+      <p>인앱 신고 폼을 기본 지원 경로로 이용해 주세요. 서비스가 unavailable이면 <a href="https://github.com/NovaDev26316/volume-guard/issues/new">GitHub에서 공개 지원 요청</a>을 대체 경로로 만들 수 있습니다. 계정·접근·삭제 문의는 <a href="mailto:novadev26316@gmail.com">이메일로 비공개 문의</a>해 주세요.</p>
       <p>공개 이슈에 이메일, OTP, 인증 토큰, 주문·고객·구독 ID 또는 그 밖의 개인정보를 게시하지 마세요. 계정, 개인정보 열람 또는 삭제 요청은 이메일을 이용해 주세요. 결제와 환불 문의는 구매 영수증에 안내된 Lemon Squeezy 판매자 지원 경로를 먼저 이용해 주세요.</p>
     </section>
   </main>

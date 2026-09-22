@@ -16,6 +16,22 @@ All notable public changes to Volume Guard are documented here.
 
 <!-- Document public fixes here. -->
 
+## 0.4.5
+
+### Added
+
+- Added an in-app support and feedback form with **Report problem**, **Feature request**, and **General feedback** categories.
+- Added reviewable report fields for title, description, optional reproduction steps, diagnostics opt-in, and current-hostname opt-in.
+- Added anonymous and signed-in submission support with an opaque `VG-...` report ID, duplicate-submit protection, and rate-limit feedback.
+- Added a support-safe diagnostics whitelist that excludes raw audio, credentials, tokens, payment identifiers, full URLs, and arbitrary extension storage.
+- Kept **Copy diagnostics** and the public GitHub Issue flow as reviewed fallback paths.
+
+### Changed
+
+- Changed the primary support path from a GitHub Issue draft to the in-app report form.
+- Added backend persistence, operator CLI access, report statuses, and a default 180-day support-report retention policy.
+- Updated privacy and support documentation to explain user-initiated submission, optional hostname handling, account association, anonymous reports, IP abuse prevention, and retention.
+
 ## 0.4.4
 
 ### Changed

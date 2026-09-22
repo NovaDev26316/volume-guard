@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a Volume Guard audio or normalization problem.
+description: Public fallback for a Volume Guard problem when in-app support is unavailable.
 title: "[Bug] "
 labels:
   - bug

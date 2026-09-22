@@ -28,13 +28,19 @@ Captured tab audio is used only for real-time processing. It is not recorded, sa
 
 ## Reporting Bugs and Support
 
-Volume Guard does not automatically send bug reports, usage data, or diagnostics. To report a problem:
+The primary support path is the in-app report form. Open the extension's **Diagnostics** tab, choose **Report problem**, review the category, title, description, optional reproduction steps, and diagnostics preview, then press **Submit report**.
 
-1. Use **Copy diagnostics** in the extension popup or support page. The copied template may include the extension version, site, active state, gain, input level, output volume, browser, language, and timestamp.
+Volume Guard does not automatically send bug reports, usage data, or diagnostics. A report is sent only after you explicitly submit it. You may submit anonymously or, when a valid sign-in session is available, associate the report with your account.
+
+The form can optionally include a strict support-safe diagnostics set: extension and manifest version, browser summary and language, UI language, active state, current gain, input level, output volume, normalization strength, Night Mode state, scope, and plan. The current site hostname is a separate opt-in. Raw audio, full URLs, page titles, saved-site lists, credentials, tokens, payment identifiers, and arbitrary extension storage are not included.
+
+If the in-app service is unavailable:
+
+1. Use **Copy diagnostics** in the extension popup or support page and review the content.
 2. Open the [issue form](https://github.com/NovaDev26316/volume-guard/issues/new/choose), describe the problem, and paste the diagnostics if they are relevant.
 3. Review everything you plan to submit and remove private or sensitive information.
 
-GitHub Issues may be public. Do not post personal information, private browsing details, credentials, or other sensitive data.
+GitHub Issues are a public fallback. Do not post personal information, private browsing details, credentials, OTPs, tokens, payment information, or account identifiers. Do not report security vulnerabilities through GitHub; follow [SECURITY.md](./SECURITY.md).
 
 ## Permissions
 
@@ -59,7 +65,7 @@ Public changes are documented in the [Changelog](./CHANGELOG.md). Published pack
 
 ## Feedback
 
-Suggestions and general feedback are welcome. Use the [Feature Request or General Feedback form](https://github.com/NovaDev26316/volume-guard/issues/new/choose) so the discussion remains organized and visible to the community.
+Suggestions and general feedback are welcome through the in-app **Feature request** or **General feedback** categories. GitHub's [Feature Request or General Feedback form](https://github.com/NovaDev26316/volume-guard/issues/new/choose) remains available as the public fallback.
 
 ## Security
 
