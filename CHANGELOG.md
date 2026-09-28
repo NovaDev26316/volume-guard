@@ -16,6 +16,24 @@ All notable public changes to Volume Guard are documented here.
 
 <!-- Document public fixes here. -->
 
+## 0.4.6
+
+### Added
+
+- Added a one-time Volume Guard Pro purchase that unlocks Advanced Mixer without a subscription or recurring charge.
+- Added automatic Pro access refresh after a successful checkout.
+
+### Changed
+
+- Removed monthly and yearly subscription choices from new Pro sales while retaining access and management compatibility for existing subscribers.
+- Updated Pro purchase, access, and refund handling so entitlement follows the verified purchase and refund status.
+- Added a v0.4.6 What's New notice and refreshed contextual Pro guidance.
+- Updated the privacy policy to describe limited purchase and refund metadata used to verify access and reconcile refunds.
+
+### Fixed
+
+- Improved Free and Pro access status clarity when no active entitlement is present.
+
 ## 0.4.5
 
 ### Added

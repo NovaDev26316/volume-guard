@@ -17,6 +17,10 @@ Captured tab audio is used only for real-time processing. It is not recorded, sa
 - Free controls for normalization, output volume, site exclusions, diagnostics, and Korean / English UI.
 - Pro Advanced Mixer with Mixer Master, HPF / LPF, 4-band EQ, Compressor, Gate / Expander, Limiter, Reverb, Delay, metering, reset controls, and a real-time EQ response graph.
 
+### Volume Guard Pro
+
+New Pro purchases are one-time purchases with no subscription or recurring charge. Pro unlocks Advanced Mixer and its advanced audio controls. Existing legacy subscription accounts remain supported for their current access status and subscription management.
+
 ## Links
 
 - [Install Volume Guard from the Chrome Web Store](https://chromewebstore.google.com/detail/volume-guard/jphlbijdgpcjanmdjacfhlhidgcbogah)
